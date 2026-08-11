@@ -321,6 +321,66 @@
     color: var(--accent2);
   }
 
+  /* Projects */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 28px;
+    transition: border-color 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .project-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .project-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .project-link {
+    font-size: 11px;
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 3px 9px;
+    transition: all 0.2s;
+  }
+
+  .project-link:hover {
+    border-color: var(--accent);
+    background: rgba(74,240,196,0.08);
+  }
+
+  .project-desc {
+    font-size: 13px;
+    color: #8891b4;
+    margin-top: auto;
+    padding-top: 14px;
+  }
+
   /* Education & Certs */
   .edu-grid {
     display: grid;
@@ -479,6 +539,10 @@
           <span class="dot">◎</span>
           <span>Curicó, Chile</span>
         </div>
+        <div class="contact-item">
+          <span class="dot">in</span>
+          <a href="https://www.linkedin.com/in/claudio-p%C3%A9rez-321588165/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
         <div class="contact-item" style="margin-top:8px;">
           <span style="background:rgba(74,240,196,0.1);border:1px solid var(--accent);color:var(--accent);padding:4px 12px;border-radius:4px;font-size:11px;letter-spacing:0.1em;">DISPONIBLE INMEDIATO</span>
         </div>
@@ -492,9 +556,11 @@
       <p class="section-label">01 · Perfil</p>
       <p class="profile-text">
         Analista Programador titulado de INACAP con experiencia en desarrollo web,
-        gestión de bases de datos y soporte técnico. Orientado a aportar soluciones
-        eficientes en entornos tecnológicos, con habilidad para detectar y resolver
-        problemas tanto en software como en operaciones.
+        gestión de bases de datos y soporte técnico. Diseñé y desarrollé el sitio web
+        de <strong style="color:var(--text);">Transportes LCZ</strong>, sumando experiencia
+        práctica end‑to‑end en diseño, desarrollo y puesta en producción. Orientado a
+        aportar soluciones eficientes en entornos tecnológicos, con habilidad para
+        detectar y resolver problemas tanto en software como en operaciones.
       </p>
     </section>
 
@@ -554,7 +620,7 @@
             <span class="time-org">CONSEL</span>
           </div>
           <div class="time-content">
-            <p class="time-role">Asistente Técnico — Mantención de Líneas Energizadas</p>
+            <p class="time-role">Asistente Técnico — Análisis y Gestión de Datos</p>
             <ul class="time-bullets">
               <li>Gestión y análisis de información operativa mediante planillas.</li>
               <li>Detección y corrección de inconsistencias en datos.</li>
@@ -596,17 +662,35 @@
       </div>
     </section>
 
-    <!-- Proyecto -->
+    <!-- Proyectos -->
     <section>
-      <p class="section-label">04 · Proyecto Académico</p>
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:28px;max-width:540px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
-        <p style="font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:10px;">Sistema de Gestión de Datos</p>
-        <div class="tags" style="margin-bottom:14px;">
-          <span class="tag">Python</span>
-          <span class="tag">SQL</span>
-          <span class="tag">CRUD</span>
+      <p class="section-label">04 · Proyectos</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-title-row">
+            <p class="project-title">Transportes LCZ</p>
+            <a class="project-link" href="https://www.lcztransportes.cl" target="_blank" rel="noopener">Visitar ↗</a>
+          </div>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">SEO</span>
+            <span class="tag">Responsive</span>
+          </div>
+          <p class="project-desc">Sitio web corporativo para empresa de transporte de carga, mudanzas, fletes y grúa. Diseño, desarrollo y despliegue en producción, con cotización directa vía WhatsApp y buenas prácticas de SEO on-page.</p>
         </div>
-        <p style="font-size:13px;color:#8891b4;">Aplicación con funcionalidades CRUD completas. Organización y manejo eficiente de información estructurada en base de datos relacional.</p>
+
+        <div class="project-card">
+          <div class="project-title-row">
+            <p class="project-title">Sistema de Gestión de Datos</p>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">CRUD</span>
+          </div>
+          <p class="project-desc">Proyecto académico — INACAP. Aplicación con funcionalidades CRUD completas. Organización y manejo eficiente de información estructurada en base de datos relacional.</p>
+        </div>
       </div>
     </section>
 
