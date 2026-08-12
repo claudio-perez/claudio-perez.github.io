@@ -6,7 +6,7 @@
 <title>Claudio Pérez Jaque — Analista Programador</title>
 <meta name="description" content="Analista Programador — desarrollo web, datos y soporte TI. Curicó, Chile.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0b0d12;
@@ -34,8 +34,8 @@
   @media (prefers-reduced-motion: reduce){
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
   }
-  .mono{font-family:'JetBrains Mono',monospace;}
-  .display{font-family:'Space Grotesk',sans-serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .display{font-family:'Fraunces',serif;}
   a{color:inherit;}
   ::selection{background:var(--accent);color:#171100;}
   :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
@@ -64,7 +64,7 @@
     to{transform:translateX(-50%);}
   }
   .ticker-item{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     letter-spacing:0.08em;
     color:var(--muted);
@@ -95,14 +95,14 @@
     padding:18px 0;
   }
   .brand{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-weight:700;
     font-size:15px;
     letter-spacing:-0.01em;
   }
   .navlinks{display:flex;gap:28px;list-style:none;}
   .navlinks a{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     letter-spacing:0.08em;
     text-transform:uppercase;
@@ -112,7 +112,7 @@
   }
   .navlinks a:hover{color:var(--accent);}
   .nav-cta{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     letter-spacing:0.05em;
     color:var(--bg);
@@ -132,7 +132,7 @@
     align-items:start;
   }
   .eyebrow{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     letter-spacing:0.18em;
     text-transform:uppercase;
@@ -161,7 +161,7 @@
     flex-wrap:wrap;
   }
   .btn{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:12px;
     letter-spacing:0.04em;
     padding:12px 20px;
@@ -178,29 +178,21 @@
   .btn-ghost{border:1px solid var(--border);color:var(--text);}
   .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
 
-  /* Status panel */
-  .status-panel{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    padding:22px;
+  /* Nota lateral (reemplaza el panel tipo dashboard) */
+  .side-note{
+    border-left:2px solid var(--accent);
+    padding-left:22px;
+    margin-top:6px;
   }
-  .status-panel .row{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 0;
-    border-bottom:1px solid var(--border);
-    font-family:'JetBrains Mono',monospace;
-    font-size:12px;
+  .side-note p{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;
+    color:var(--muted);
+    line-height:1.9;
   }
-  .status-panel .row:last-child{border-bottom:none;}
-  .status-panel .row span:first-child{color:var(--muted-2);letter-spacing:0.05em;text-transform:uppercase;font-size:10.5px;}
-  .status-panel .row span:last-child{color:var(--text);}
-  .status-available{
-    color:var(--status) !important;
-    display:flex;align-items:center;gap:7px;
-  }
+  .side-note p + p{margin-top:2px;}
+  .side-note .hl{color:var(--text);}
+  .side-note .status-available{color:var(--status);display:inline-flex;align-items:center;gap:7px;}
 
   /* ---------- Sections generic ---------- */
   section{padding:64px 0;border-top:1px solid var(--border);}
@@ -213,20 +205,20 @@
     flex-wrap:wrap;
   }
   .sec-num{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     color:var(--accent);
     letter-spacing:0.1em;
   }
   .sec-title{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-weight:600;
     font-size:28px;
     letter-spacing:-0.01em;
     margin-top:6px;
   }
   .sec-note{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11.5px;
     color:var(--muted-2);
     max-width:32ch;
@@ -257,7 +249,7 @@
     display:flex;
     align-items:center;
     gap:12px;
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     color:var(--muted-2);
     letter-spacing:0.06em;
@@ -270,7 +262,7 @@
     background:linear-gradient(90deg,var(--accent),var(--border));
   }
   .project-title{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-weight:600;
     font-size:20px;
   }
@@ -294,7 +286,7 @@
     overflow:hidden;
     transition:max-height 0.4s ease;
   }
-  .project-card.open .project-body{max-height:900px;}
+  .project-card.open .project-body{max-height:2600px;}
   .project-body-inner{
     padding:0 24px 26px;
     border-top:1px solid var(--border);
@@ -306,7 +298,7 @@
     margin-top:20px;
   }
   .project-cols h4{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:10.5px;
     letter-spacing:0.1em;
     text-transform:uppercase;
@@ -316,7 +308,7 @@
   .project-cols p{font-size:13.5px;color:var(--muted);line-height:1.6;}
   .project-links{margin-top:20px;display:flex;gap:14px;flex-wrap:wrap;}
   .project-links a{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:12px;
     color:var(--text);
     border:1px solid var(--border);
@@ -329,7 +321,7 @@
 
   .tags{display:flex;flex-wrap:wrap;gap:8px;}
   .tag{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     background:var(--surface-2);
     border:1px solid var(--border);
@@ -337,6 +329,85 @@
     padding:5px 10px;
     border-radius:5px;
   }
+
+  /* Marco de navegador para capturas de proyectos */
+  .browser-frame{
+    margin-top:20px;
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+    background:#e8e2d6;
+  }
+  .browser-frame .bf-bar{
+    display:flex;
+    gap:6px;
+    padding:10px 12px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--border);
+  }
+  .browser-frame .bf-bar span{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--border);
+  }
+  .browser-frame img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .project-visual{
+    min-height:220px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(135deg, rgba(255,177,0,0.18), rgba(255,177,0,0.04)),
+      linear-gradient(160deg, #111827 0%, #171b24 42%, #0b0d12 100%);
+    border-top:1px solid var(--border);
+  }
+  .project-visual::before{
+    content:'';
+    position:absolute;
+    inset:20px 24px 20px 24px;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:8px;
+    background:rgba(11,13,18,0.28);
+  }
+  .project-visual .placeholder-badge{
+    position:relative;
+    z-index:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:180px;
+    height:42px;
+    border-radius:999px;
+    padding:0 18px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--text);
+    border:1px solid rgba(255,177,0,0.44);
+    background:rgba(255,177,0,0.08);
+    box-shadow:0 0 0 1px rgba(255,177,0,0.12) inset;
+  }
+  .project-visual .placeholder-badge small{
+    color:var(--muted);
+    font-size:10px;
+    letter-spacing:0.06em;
+    margin-left:8px;
+  }
+  .project-visual.homebudget{background:linear-gradient(135deg, rgba(255,177,0,0.2), rgba(255,177,0,0.04)), linear-gradient(160deg, #111827 0%, #1b1f2b 42%, #0d1117 100%);}
+  .project-visual.lcz{background:linear-gradient(135deg, rgba(76,123,255,0.18), rgba(76,123,255,0.04)), linear-gradient(160deg, #111827 0%, #1b1f2b 42%, #0e1220 100%);}
+  .project-visual.crm{background:linear-gradient(135deg, rgba(60,230,125,0.16), rgba(60,230,125,0.04)), linear-gradient(160deg, #111827 0%, #182123 42%, #0d1211 100%);}
+  .preview-grid{
+    display:grid;
+    grid-template-columns:1.1fr 1fr;
+    gap:14px;
+  }
+  @media (max-width:760px){ .preview-grid{grid-template-columns:1fr;} }
 
   /* ---------- Skills ---------- */
   .skills-grid{
@@ -351,7 +422,7 @@
     padding:20px;
   }
   .skill-card h3{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-size:15px;
     font-weight:600;
     margin-bottom:14px;
@@ -378,12 +449,12 @@
     cursor:pointer;
   }
   .timeline-head .period{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     color:var(--muted-2);
   }
   .timeline-head .role{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-weight:600;
     font-size:15px;
   }
@@ -401,7 +472,7 @@
     content:'→';
     position:absolute;left:0;top:6px;
     color:var(--accent);
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:12px;
   }
 
@@ -413,8 +484,8 @@
     border-radius:var(--radius);
     padding:18px 20px;
   }
-  .info-card .year{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--accent);letter-spacing:0.06em;}
-  .info-card h3{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;margin-top:8px;}
+  .info-card .year{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--accent);letter-spacing:0.06em;}
+  .info-card h3{font-family:'Fraunces',serif;font-size:15px;font-weight:600;margin-top:8px;}
   .info-card p{color:var(--muted);font-size:13px;margin-top:4px;}
 
   .cert-list{display:flex;flex-direction:column;gap:0;}
@@ -438,9 +509,9 @@
     border-bottom:1px solid var(--border);
   }
   .lang-row:last-child{border-bottom:none;}
-  .lang-name{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;}
+  .lang-name{font-family:'Fraunces',serif;font-weight:600;font-size:14px;}
   .lang-level{
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:10.5px;
     letter-spacing:0.08em;
     text-transform:uppercase;
@@ -459,7 +530,7 @@
     text-align:center;
   }
   .contact-panel h2{
-    font-family:'Space Grotesk',sans-serif;
+    font-family:'Fraunces',serif;
     font-size:clamp(26px,4vw,38px);
     font-weight:700;
     letter-spacing:-0.01em;
@@ -474,7 +545,7 @@
     align-items:center;
     flex-wrap:wrap;
     gap:12px;
-    font-family:'JetBrains Mono',monospace;
+    font-family:'IBM Plex Mono',monospace;
     font-size:11px;
     color:var(--muted-2);
   }
@@ -530,12 +601,11 @@
         </div>
       </div>
 
-      <div class="status-panel mono" id="statusPanel">
-        <div class="row"><span>Estado</span><span class="status-available"><span class="dot-status"></span>Disponible</span></div>
-        <div class="row"><span>Ubicación</span><span>Curicó, Chile</span></div>
-        <div class="row"><span>Hora local</span><span id="localTime">--:--:--</span></div>
-        <div class="row"><span>Stack principal</span><span>Python · SQL · Django</span></div>
-        <div class="row"><span>Contacto</span><span><a href="https://www.linkedin.com/in/claudio-p%C3%A9rez-321588165/" target="_blank" rel="noopener">LinkedIn ↗</a></span></div>
+      <div class="side-note">
+        <p><span class="status-available"><span class="dot-status"></span>Disponible</span> para nuevos proyectos</p>
+        <p>Trabajo desde <span class="hl">Curicó, Chile</span></p>
+        <p>Stack principal: <span class="hl">Python · SQL · Django</span></p>
+        <p><a href="https://www.linkedin.com/in/claudio-p%C3%A9rez-321588165/" target="_blank" rel="noopener">Ver LinkedIn ↗</a></p>
       </div>
     </div>
   </header>
@@ -563,7 +633,7 @@
         <div class="project-body">
           <div class="project-body-inner">
             <div class="tags">
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SEO</span><span class="tag">Responsive</span>
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SEO</span>
             </div>
             <div class="project-cols">
               <div>
@@ -579,8 +649,52 @@
                 <p>Canal de contacto directo operativo y sitio indexado, dando a la empresa una vitrina profesional propia.</p>
               </div>
             </div>
+
+            <div class="browser-frame">
+              <div class="bf-bar"><span></span><span></span><span></span></div>
+              <img src="assets/lcztransportes.png" alt="Screenshot del sitio Transportes LCZ" style="display:block;width:100%;height:auto;">
+            </div>
+
             <div class="project-links">
               <a href="https://www.lcztransportes.cl" target="_blank" rel="noopener">Ver sitio en vivo ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card open" data-project>
+        <div class="project-head" data-toggle>
+          <div>
+            <div class="route-line"><span>Proyecto personal</span><span class="track"></span><span>En desarrollo activo</span></div>
+            <p class="project-title">HomeBudget</p>
+            <p class="project-sub">App de finanzas personales: control de gastos, presupuestos, metas de ahorro y calendario</p>
+          </div>
+          <span class="chevron">+</span>
+        </div>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <div class="tags">
+              <span class="tag">JavaScript</span><span class="tag">Chart.js</span><span class="tag">CSS</span><span class="tag">LocalStorage</span>
+            </div>
+
+            <div class="project-cols">
+              <div>
+                <h4>Problema</h4>
+                <p>Necesitaba controlar mis propios gastos y entender por dónde se me estaba yendo más dinero, sin depender de una app de terceros.</p>
+              </div>
+              <div>
+                <h4>Proceso</h4>
+                <p>La construí en JavaScript vanilla, sin frameworks ni backend, con persistencia 100% en LocalStorage. Empezó como un registro simple de gastos y fue creciendo con presupuestos por categoría, gráficos con Chart.js, metas de ahorro, calendario y alertas automáticas.</p>
+              </div>
+              <div>
+                <h4>Resultado</h4>
+                <p>Un dashboard con KPIs e insights automáticos, 6 tipos de gráficos, sistema de metas con seguimiento de avance y calculadora de ahorro proyectado.</p>
+              </div>
+            </div>
+
+            <div class="browser-frame">
+              <div class="bf-bar"><span></span><span></span><span></span></div>
+              <img src="assets/homebudget.png" alt="Screenshot de HomeBudget" style="display:block;width:100%;height:auto;">
             </div>
           </div>
         </div>
@@ -614,6 +728,11 @@
                 <p>Base sólida en modelado de datos y lógica de persistencia, aplicada luego en contextos laborales reales.</p>
               </div>
             </div>
+
+            <div class="browser-frame">
+              <div class="bf-bar"><span></span><span></span><span></span></div>
+              <img src="assets/inacap_placeholder.png" alt="Screenshot del proyecto académico INACAP" style="display:block;width:100%;height:auto;">
+            </div>
           </div>
         </div>
       </div>
@@ -632,7 +751,7 @@
           <h3><span class="ico">⌘</span>Lenguajes & Frameworks</h3>
           <div class="tags">
             <span class="tag">Python</span><span class="tag">Django</span><span class="tag">Java</span>
-            <span class="tag">PHP</span><span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
             <span class="tag">Bootstrap</span><span class="tag">Git</span>
           </div>
         </div>
@@ -826,16 +945,6 @@
     track.innerHTML = html;
   }
   buildTicker();
-
-  // Live local time (Santiago/Chile)
-  function updateClock(){
-    const el = document.getElementById('localTime');
-    const now = new Date();
-    const opts = { hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false, timeZone:'America/Santiago' };
-    el.textContent = now.toLocaleTimeString('es-CL', opts);
-  }
-  updateClock();
-  setInterval(updateClock, 1000);
 
   // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
